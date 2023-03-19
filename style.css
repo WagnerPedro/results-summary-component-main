@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* local font  */
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+/* body */
+html, body:not(h1,h2,h3,h4,h5,h6) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font: normal 1em 'HankenGrotesk';
+}
+
+/* colors */
+:root {
+    /* primary */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* background gradients */
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    /* neutral gradients */
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* cicle gradientes  */
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+.container {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.315);
+    border-radius: 20px;
+}
+
+/* card 1 */
+
+.right-section {
+    width: 50%;
+    float: left;
+    background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    border-radius: 20px;
+    height: 400px;
+    padding: 0 25px;
+}
+
+.right-section > p:first-child {
+    font-size: 18px;
+    color: var(--Light-lavender);
+    text-align: center;
+    margin: 19px 0 0 0;
+}
+
+.right-section .circle {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 25px auto;
+    /* padding: 20px 0; */
+    background-image: linear-gradient(var(--Violet-blue) 50%, var(--Persian-blue));
+}
+
+.circle > .info-circle {
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    /* line-height: 70px; */
+}
+
+.info-circle > div {
+    font-size: 4em; 
+    font-weight: bold;
+    color: white;
+}
+
+.info-circle > span {
+    color: var(--Light-lavender);
+}
+
+.left-section {
+    width: 50%;
+    float: right;
+}
+
+.right-section h2 {
+    text-align: center;
+    color: var(--White);
+}
+
+.right-section p {
+    color: var(--White);
+    text-align: center;
+}
+
+/* card 2 */
+
+.left-section {
+    width: 50%;
+    float: left;
+    background-color: white;
+    border-radius: 20px;
+    height: 400px;
+    padding: 0 25px;
+}
+
+.left-section h3 {
+    margin-top: 1rem;
+    margin-bottom:2rem;
+    text-align: left;
+    color: var(--Dark-gray-blue);
+}
+
+.first-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(0, 100%, 67%, 0.123);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.first-info .title {
+    color: var(--Light-red);
+    font-weight: bold;
+}
+
+.second-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(39, 100%, 56%, 0.192);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.second-info .title {
+    color: var(--Orangey-yellow);
+    font-weight: bold;
+}
+
+.thirth-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(166, 100%, 37%, 0.13);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.thirth-info .title {
+    color: var(--Green-teal);
+    font-weight: bold;
+}
+
+.fourth-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(241, 81%, 54%, 0.123);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.fourth-info .title {
+    color: var(--Violet-blue);
+    font-weight: bold;
+}
+
+.first-info img, .second-info img, .thirth-info img, .fourth-info img {
+    line-height: 25px;
+}
+
+strong {
+    color: var(--Dark-gray-blue);
+}
+
+.complement {
+    color: var(--Dark-gray-blue);
+}
+
+.left-section button {
+    background-color: var(--Dark-gray-blue);
+    outline: none;
+    padding: 15px;
+    width: 99%;
+    border-radius: 20px;
+    border: none;
+    color: var(--White);
+    font-weight: 700;
+    margin:  0 auto;
+}
+
+.left-section button:hover {
+    background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+}
